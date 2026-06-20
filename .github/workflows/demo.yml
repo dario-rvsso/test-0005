@@ -49,7 +49,7 @@ jobs:
       - name: Show content of artifact
         run: ls -R
       - name: Output js filename
-        run: echo "JS FILE IS: ${{ needs.build.outputs.script-file }}"
+        run: echo "${{ needs.build.outputs.script-file }}"
       - name: Deploy
         run: echo "Deploying..."
 
